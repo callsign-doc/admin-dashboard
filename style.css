@@ -12,6 +12,10 @@ div {
 
 .sidebar {
     grid-row: 1/span 3;
+
+    display: grid;
+    grid-template-rows: 70px 0.3fr 0.3fr;
+    gap: 40px;
 }
 
 .headerContainer {
