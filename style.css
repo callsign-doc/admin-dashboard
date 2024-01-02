@@ -22,7 +22,7 @@ div {
     height: 20px;
     width: auto;
 }
-.username {
+.username, .usernameContainer *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
@@ -71,10 +71,28 @@ div {
     border: 1px solid black;
 }
 #profilePic {
-    height: 40px;
+    height: 60px;
     width: auto;
     border-radius: 50%;
     border: 0px;
+}
+
+.userInfo * {
+    border: 1px solid black;
+}
+.userInfo {
+    display: flex;
+    align-content: center;
+
+    list-style: none;
+}
+.userInfo #profilePic {
+    margin-right: 10px;
+    text-align: center;
+}
+#greetingsText {
+    font-size: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -88,3 +106,4 @@ div {
     grid-column: 2/4;
     grid-row: 2/span 2;
 }
+
