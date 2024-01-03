@@ -1,6 +1,6 @@
 div {
     border: 1px solid rgb(160, 160, 160);
-    padding: 10px;
+    padding: 5px;
 }
 
 .mainContainer {
@@ -126,14 +126,41 @@ div {
     background-color: rgb(240, 94, 36);
 }
 
-
-
-
-
-
-
 .contentContainer {
     grid-column: 2/4;
     grid-row: 2/span 2;
+
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: 0.2fr 0.8fr 0.1fr;
+
+    padding: 0px;
 }
+.contentContainer * {
+    border: 1px solid black;
+
+    
+}
+.content-primaryContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    padding: 0px;
+
+}
+.projectCards {
+    padding: 0px;
+}
+.content-container-header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
 
