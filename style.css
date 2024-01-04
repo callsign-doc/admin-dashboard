@@ -132,7 +132,7 @@ div {
 
     display: grid;
     grid-template-columns: 0.7fr 0.3fr;
-    grid-template-rows: 0.2fr 0.8fr 0.1fr;
+    grid-template-rows: 1fr 0.1fr;
 
     padding: 0px;
 }
@@ -145,7 +145,7 @@ div {
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .projects-container {
     display: grid;
