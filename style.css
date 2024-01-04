@@ -131,7 +131,7 @@ div {
     grid-row: 2/span 2;
 
     display: grid;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 0.8fr 0.3fr;
     grid-template-rows: 1fr 0.1fr;
 
     padding: 0px;
@@ -145,18 +145,27 @@ div {
     display: flex;
     flex-direction: column;
 
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+    padding: 10px;
     /* margin-bottom: 20px; */
 }
 .projects-container {
+    flex: 1;
+    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
     gap: 20px;
 
     padding: 0px;
+    margin-top: 10px;
 
 }
 .projectCards {
-    padding: 0px;
+    padding: 5px;
+    width: 85%;
+
+    border-radius: 20px;
 }
 .content-container-header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
