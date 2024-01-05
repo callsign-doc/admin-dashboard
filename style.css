@@ -10,7 +10,10 @@
 html, body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+
+    /* the magic potion */
+    margin:0;
+    padding:0;
 }
 div {
     /* border: 1px solid rgb(160, 160, 160); */
