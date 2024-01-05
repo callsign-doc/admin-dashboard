@@ -1,5 +1,5 @@
 :root {
-    --babyPowder: #EEE8E7;
+    --babyPowder: #F7F7F3;
     --blue: rgb(15, 95, 255);
     --silver: #EEE8E7;
     --black: #050505;
@@ -26,7 +26,8 @@ h2 {
 
     height: 100%;
     width: 100%;
-    padding: 0px;
+    padding: 0px
+
 }
 .mainContainer > div {
     border: 1px solid black;
@@ -71,6 +72,12 @@ h2 {
 .dashboardNavigation {
     display: flex;
 }
+.sidebar {
+    background-color: #050505;
+}
+.sidebar *{
+    color: var(--babyPowder);
+}
 
 
 
@@ -87,7 +94,7 @@ h2 {
 }
 #searchBar {
     padding: 5px;
-    background-color: var(--babyPowder);
+    background-color: var(--silver);
 
     height: 15px;
     flex: 1;
@@ -123,13 +130,15 @@ h2 {
     border-radius: 50%;
     border: 0px;
     justify-content: center;
+
+    border: 1px solid black;
 }
 .username {
     text-align: center;
 }
 
 .userInfo * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .userInfo {
     display: flex;
@@ -177,6 +186,8 @@ h2 {
     background-color: rgb(240, 94, 36);
 }
 
+
+/* CONTENT CONTAINER--------------------------------- */
 .contentContainer {
     grid-column: 2/4;
     grid-row: 2/span 2;
@@ -187,11 +198,12 @@ h2 {
 
     padding: 0px;
 }
-.contentContainer * {
+.contentContainer .projectCards {
     border: 1px solid black;
 
     
 }
+/* CONTENT PRIMARY CONTAINER------------ */
 .content-primaryContainer {
     display: flex;
     flex-direction: column;
@@ -228,17 +240,23 @@ h2 {
 
 
 
+/* CONTENT SECONDARY CONTAINER--------------------------------- */
 .content-secondaryContainer {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+
+    justify-content: center;
+}
+.announcement-info-container {
+    width: 80%;
 }
 .announcementContainer .projectCards{
     margin-top: 5px;
     width: 90%;
 }
 .announcementContainer .projectCards .project-description-text:not(:last-child) {
-    border-bottom: 2px solid var(--keychron);
+    border-bottom: 1px solid rgb(159, 159, 159);
 }
 
 
@@ -257,6 +275,9 @@ h2 {
 }
 .trending-user-info {
 
+}
+.trending-user-pfp {
+    border: 1px solid black;
 }
 #trending-username {
     margin-bottom: 5px;
