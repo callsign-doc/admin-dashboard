@@ -196,6 +196,30 @@ div {
 .announcementContainer .projectCards .project-description-text:not(:last-child) {
     border-bottom: 2px solid var(--keychron);
 }
-  
+
+
+.trendingContainer {
+    overflow-y: auto;
+}
+.trendingContainer img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.trendingUser {
+    display: flex;
+    margin-bottom: 5px;
+}
+#trending-username {
+    margin-bottom: 5px;
+}
+.trending-user-description-text {
+    font-size: small;
+    font-weight: lighter;
+}
+.usernameContainer {
+    list-style: none;
+}
 
 
